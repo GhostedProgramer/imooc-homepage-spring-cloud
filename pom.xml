@@ -4,14 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.imooc.homepage</groupId>
     <artifactId>imooc-homepage-spring-cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>homepage-eureka</module>
+    </modules>
     <!--项目打包类型,默认为jar,但父工程需定义为pom-->
     <packaging>pom</packaging>
     <!--名称及描述-->
     <name>imooc-homepage-spring-cloud</name>
-    <description>Project for SpringCloud Test</description>
+    <description>Project for SpringCloud</description>
 
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
