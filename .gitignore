@@ -1,0 +1,22 @@
+.env
+**/.gradle
+**/build/
+**/application-local.yml
+**/application-server.yml
+**/application-local-test.yml
+**/application-local-test2.yml
+**/application-local-test*.yml
+**/application-server-test.yml
+**/logs/*
+**/rebel*
+classes/*
+spring-shell.log
+
+### IntelliJ IDEA ###
+.idea
+.ideaDataSources
+dataSources
+*.iws
+*.iml
+*.ipr
+**/out/
