@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>homepage-eureka</module>
+        <module>homepage-zuul</module>
     </modules>
     <!--项目打包类型,默认为jar,但父工程需定义为pom-->
     <packaging>pom</packaging>
