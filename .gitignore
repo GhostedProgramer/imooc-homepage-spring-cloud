@@ -11,6 +11,7 @@
 **/rebel*
 classes/*
 spring-shell.log
+target
 
 ### IntelliJ IDEA ###
 .idea
