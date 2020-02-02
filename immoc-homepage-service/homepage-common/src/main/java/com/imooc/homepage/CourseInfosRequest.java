@@ -6,10 +6,22 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class CourseInfosRequest {
 
     private List<Long> ids;
+
+    public CourseInfosRequest() {
+    }
+
+    public CourseInfosRequest(List<Long> ids) {
+        this.ids = ids;
+    }
+
+    public List<Long> getIds() {
+        return ids;
+    }
+
+    public void setIds(List<Long> ids) {
+        this.ids = ids;
+    }
 }

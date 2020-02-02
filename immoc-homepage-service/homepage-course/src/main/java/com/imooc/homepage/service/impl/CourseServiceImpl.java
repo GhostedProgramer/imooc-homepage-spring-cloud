@@ -38,12 +38,12 @@ public class CourseServiceImpl implements ICourseService {
     }
 
     private CourseInfo trans(HomepageCourse course) {
-        return CourseInfo.builder()
-                .id(course.getId())
-                .courseIcon(course.getCourseIcon())
-                .courseName(course.getCourseName())
-                .courseIntro(course.getCourseIntro())
-                .courseType(course.getCourseType() == 0 ? "免费课程" : "收费课程")
-                .build();
+        return new CourseInfo(
+                course.getId(),
+                course.getCourseName(),
+                course.getCourseType() == 0 ? "免费课程" : "收费课程",
+                course.getCourseIcon(),
+                course.getCourseIntro()
+        );
     }
 }

@@ -53,6 +53,75 @@ public class HomepageCourse {
         this.courseIntro = courseIntro;
     }
 
+    public HomepageCourse() {
+    }
+
+    public HomepageCourse(Long id, String courseName, Integer courseType, String courseIcon, String courseIntro, Date createTime, Date updateTime) {
+        this.id = id;
+        this.courseName = courseName;
+        this.courseType = courseType;
+        this.courseIcon = courseIcon;
+        this.courseIntro = courseIntro;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public Integer getCourseType() {
+        return courseType;
+    }
+
+    public void setCourseType(Integer courseType) {
+        this.courseType = courseType;
+    }
+
+    public String getCourseIcon() {
+        return courseIcon;
+    }
+
+    public void setCourseIcon(String courseIcon) {
+        this.courseIcon = courseIcon;
+    }
+
+    public String getCourseIntro() {
+        return courseIntro;
+    }
+
+    public void setCourseIntro(String courseIntro) {
+        this.courseIntro = courseIntro;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
     public static HomepageCourse invalid() {
         HomepageCourse homepageCourse = new HomepageCourse("", 0, "", "");
         homepageCourse.setId(-1L);
