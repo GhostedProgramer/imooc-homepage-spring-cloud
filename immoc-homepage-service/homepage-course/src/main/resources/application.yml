@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-client-homepage-client
+    name: eureka-client-homepage-course
   jpa:
     show-sql: true
     hibernate:

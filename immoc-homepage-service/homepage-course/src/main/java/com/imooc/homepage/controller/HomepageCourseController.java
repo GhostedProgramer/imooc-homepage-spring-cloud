@@ -22,13 +22,13 @@ public class HomepageCourseController {
         this.courseService = courseService;
     }
 
-    @GetMapping("/{id}")
-    public CourseInfo detail(@PathVariable Long id) {
+    @GetMapping("/detail")
+    public CourseInfo detail(Long id) {
         logger.info("get course detail");
         return courseService.getCourseInfo(id);
     }
 
-    @GetMapping
+    @GetMapping("/list")
     public List<CourseInfo> list(@RequestBody CourseInfosRequest request) {
         logger.info("get courses list");
         return courseService.getCourseInfos(request);
