@@ -26,6 +26,12 @@
             <artifactId>commons-codec</artifactId>
             <version>1.9</version>
         </dependency>
+
+        <!--Hystrix 依赖 主要是用  @HystrixCommand-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
