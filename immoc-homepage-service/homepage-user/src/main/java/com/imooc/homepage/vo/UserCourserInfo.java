@@ -11,7 +11,7 @@ public class UserCourserInfo {
     private UserInfo userInfo;
     private List<CourseInfo> courseInfos;
 
-    public UserCourserInfo invalid() {
+    public static UserCourserInfo invalid() {
         return new UserCourserInfo(
                 UserInfo.invalid(),
                 Collections.emptyList()
