@@ -23,5 +23,3 @@ eureka:
       defaultZone: http://server1:8000/eureka/
 server:
   port: 7001
-  servlet:
-  context-path: /homepage-course

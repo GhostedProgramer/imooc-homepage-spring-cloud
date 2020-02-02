@@ -3,7 +3,6 @@ package com.imooc.homepage.controller;
 import com.imooc.homepage.CourseInfo;
 import com.imooc.homepage.CourseInfosRequest;
 import com.imooc.homepage.service.ICourseService;
-import com.netflix.loadbalancer.RetryRule;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/homepage-course")
 public class HomepageCourseController {
 
     private Logger logger = LoggerFactory.getLogger(HomepageCourseController.class);

@@ -30,6 +30,11 @@ public class HomepageUserCourse {
     public HomepageUserCourse() {
     }
 
+    public HomepageUserCourse(Long userId, Long courseId) {
+        this.userId = userId;
+        this.courseId = courseId;
+    }
+
     public HomepageUserCourse(Long id, Long userId, Long courseId, Date createTime, Date updateTime) {
         this.id = id;
         this.userId = userId;

@@ -16,7 +16,7 @@ public class HomepageUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-    @Column(name = "user_name", nullable = false)
+    @Column(name = "username", nullable = false)
     private String username;
     @Column(name = "email", nullable = false)
     private String email;
