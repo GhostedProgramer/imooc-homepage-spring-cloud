@@ -70,9 +70,9 @@ public class UserServiceImpl implements IUserService {
             if (CollectionUtils.isEmpty(userCourses)) {
                 return new UserCourserInfo(userInfo, Collections.emptyList());
             }
-            List<CourseInfo> list = courseClient.list(new CourseInfosRequest(
-                    userCourses.stream().map(HomepageUserCourse::getCourseId).collect(Collectors.toList())
-            ));
+            List<CourseInfo> list = userCourses.stream()
+                    .map(HomepageUserCourse::getCourseId)
+                    .map(courseClient::detail).collect(Collectors.toList());
             return new UserCourserInfo(userInfo, list);
         }
     }
